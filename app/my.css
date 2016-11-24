@@ -2,6 +2,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
+
 #container{
     margin-top: auto;
     margin-left: auto;
@@ -88,7 +89,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 30px;
     padding-top: 70px;
     margin-top: 40px;
-
 }
 img{
     width: 100%;
@@ -104,12 +104,15 @@ img{
 .social ul {
     list-style: none;
     color: #fff;
+    margin-top: 20px;
 }
 .social ul li{
     display: inline;
-list-style: none;
+    list-style: none;
     letter-spacing: 15px;
     font-size: 25px;
+
+
 }
 p{
     font-size: 16px;
@@ -362,4 +365,7 @@ ul.work li {
     background: #2C2C2C;
     padding: 50px 0;
     color: #f1f1f1;
+}
+#resume{
+
 }
