@@ -16,28 +16,35 @@
 
 </head>
 <body>
+<!-- START PRELOADER -->
+<div class="preloader">
+    <div class="status">
+        <div class="status-mes"></div>
+    </div>
+</div>
+<!-- / END PRELOADER -->
 <!--menu-->
-<div class="conteiner">
-    <nav class="navbar navbar-inverse navbar-fixed-top menu ">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top menu " >
         <div class="container">
             <div class="row">
                 <div class="navbar-left col-lg-3 menua">
                     <a href="index.html">HERO</a>
                 </div>
                 <div class="navbar-right menub">
-                    <a class="btnq" href=""> HOME</a>
-                    <a class="btnq" href="#resume">RESUME</a>
-                    <a class="btnq" href="#work">WORKS</a>
-                    <a class="btnq" href="">BLOG</a>
-                    <a class="btnq" href="">CONTACT</a>
+                    <a class="btnq page-scroll" href="#home"> HOME</a>
+                    <a class="btnq page-scroll" href="#resume">RESUME</a>
+                    <a class="btnq page-scroll" href="#mywork">WORKS</a>
+                    <a class="btnq page-scroll" href="#blog">BLOG</a>
+                    <a class="btnq page-scroll" href="#contact">CONTACT</a>
                 </div>
             </div>
         </div>
     </nav>
-</div>
+
 <!--menustart-->
 <!--akt1 start-->
-<section class="akt">
+<section class="akt" id="home">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
@@ -172,7 +179,7 @@
 </section>
 <!--akt3stop-->
 <!--akt4-->
-<section class="akt4">
+<section class="akt4" id="mywork">
     <div class="container">
         <div>
             <h2>My Recent Works</h2>
@@ -302,7 +309,7 @@
 </section>
 <!--akt6stop-->
 <!--akt7-->
-<section class="akt7">
+<section class="akt7" id="blog">
     <div class="container">
 
         <div class="title">
@@ -335,7 +342,7 @@
 </section>
 <!--akt7stop-->
 <!--akt8-->
-<section class="akt8">
+<section class="akt8" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -381,7 +388,12 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
-<script src="gallery.js"></script>
+<script src="myjs/gallery.js"></script>
+<script src="myjs/scrolling-nav.js"></script>
+<script src="myjs/jquery.easing.min.js"></script>
+<script src="myjs/preloader.js"></script>
+
+
 </body>
 
 </html>

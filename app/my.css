@@ -176,7 +176,7 @@ p{
 /*akt3*/
 .akt3{
     background-color: #f1f1f1;
-    padding: 70px 0;
+    padding: 100px 0;
 }
 
 ul.work li.active {
@@ -244,7 +244,7 @@ ul.work li {
 /*akt3stop*/
 /*akt4*/
 .akt4{
-    padding: 70px 0;
+    padding: 100px 0;
 }
 .photos {
     display: inline-block;
@@ -257,14 +257,14 @@ ul.work li {
 .akt5{
     background-color: #f1f1f1;
     text-align: center;
-    padding: 70px 0;
+    padding: 100px 0;
 
 }
 
 /*akt5stop*/
 /*akt6*/
 .akt6{
-    padding: 70px 0;
+    padding: 100px 0;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -299,12 +299,12 @@ ul.work li {
 /*akt7*/
 .akt7{
     background-color: #f1f1f1;
-    padding: 70px 0;
+    padding: 100px 0;
 }
 /*akt7stop*/
 /*akt8*/
 .akt8{
-    padding: 70px 0;
+    padding: 100px 0;
 }
 
 .contact-form {
@@ -368,4 +368,59 @@ ul.work li {
 }
 #resume{
 
+}
+
+
+
+
+/*preloader*/
+
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+.status-mes {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -26px 0 0 -26px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 5px solid rgba(0, 0, 0, 0.08);
+    border-right: 5px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #000;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
