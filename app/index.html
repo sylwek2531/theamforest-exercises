@@ -2,6 +2,8 @@
 <html lang="eng">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfolio</title>
     <!--CSS-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -25,22 +27,52 @@
 <!-- / END PRELOADER -->
 <!--menu-->
 
-    <nav class="navbar navbar-inverse navbar-fixed-top menu " >
-        <div class="container">
-            <div class="row">
-                <div class="navbar-left col-lg-3 menua">
-                    <a href="index.html">HERO</a>
+<nav class="navbar navbar-inverse navbar-fixed-top menu ">
+    <div class="container">
+        <div class="row">
+
+            <div class="navbar-left col-sm-4 menua">
+                <a href="index.html">HERO</a>
+
+
+            </div>
+            <div class="navbar navbar-nobg">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
                 </div>
-                <div class="navbar-right menub">
-                    <a class="btnq page-scroll" href="#home"> HOME</a>
-                    <a class="btnq page-scroll" href="#resume">RESUME</a>
-                    <a class="btnq page-scroll" href="#mywork">WORKS</a>
-                    <a class="btnq page-scroll" href="#blog">BLOG</a>
-                    <a class="btnq page-scroll" href="#contact">CONTACT</a>
+                <div class="navbar-collapse collapse in" aria-expanded="true">
+                    <ul class=" navbar-nav nav navbar-right menubz " style="list-style: none">
+
+                        <li>
+                            <a class="btnqz page-scroll" href="#home"> HOME</a>
+                        </li>
+                        <li>
+                            <a class="btnqz page-scroll" href="#resume">RESUME</a>
+                        </li>
+                        <li>
+                            <a class="btnqz page-scroll" href="#mywork">WORKS</a>
+                        </li>
+                        <li>
+                            <a class="btnqz page-scroll" href="#blog">BLOG</a>
+                        </li>
+                        <li>
+                            <a class="btnqz page-scroll" href="#contact">CONTACT</a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <!--menustart-->
 <!--akt1 start-->
@@ -72,7 +104,7 @@
                 </div>
             </div>
             <div class="col-lg-8">
-                <div class="margin">
+                <div class="margin fade-in">
 
                     <h2 class="profesional">Jonathon Doe</h2>
                     <h3 class="prodesional">A Professional web developer</h3>
@@ -206,26 +238,26 @@
                 </a>
             </div>
 
-        <div id="3" class="photos  col-md-4 col-sm-4">
-            <a href="img/3.jpg" class="work-popup item-wrap">
-                <img src="img/3.jpg" alt="">
-            </a>
-        </div>
-        <div id="4" class="photos dev pho col-md-4 col-sm-4">
-            <a href="img/4.jpg" class="work-popup item-wrap">
-                <img src="img/4.jpg" alt="">
-            </a>
-        </div>
-        <div id="5" class="photos col-md-4 col-sm-4">
-            <a href="img/5.jpg" class="work-popup item-wrap">
-                <img src="img/5.jpg" alt="">
-            </a>
-        </div>
-        <div id="6" class="photos web dev pho col-md-4 col-sm-4">
-            <a href="img/6.jpg" class="work-popup item-wrap">
-                <img src="img/6.jpg" alt="">
-            </a>
-        </div>
+            <div id="3" class="photos  col-md-4 col-sm-4">
+                <a href="img/3.jpg" class="work-popup item-wrap">
+                    <img src="img/3.jpg" alt="">
+                </a>
+            </div>
+            <div id="4" class="photos dev pho col-md-4 col-sm-4">
+                <a href="img/4.jpg" class="work-popup item-wrap">
+                    <img src="img/4.jpg" alt="">
+                </a>
+            </div>
+            <div id="5" class="photos col-md-4 col-sm-4">
+                <a href="img/5.jpg" class="work-popup item-wrap">
+                    <img src="img/5.jpg" alt="">
+                </a>
+            </div>
+            <div id="6" class="photos web dev pho col-md-4 col-sm-4">
+                <a href="img/6.jpg" class="work-popup item-wrap">
+                    <img src="img/6.jpg" alt="">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -258,8 +290,14 @@
             ================================================== -->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
                 <div class="carousel-inner" role="listbox">
+
                     <div class="item active">
                         <img class="first-slide" src="img/11.jpg" alt="First slide">
                         <div class="container">
@@ -392,6 +430,7 @@
 <script src="myjs/scrolling-nav.js"></script>
 <script src="myjs/jquery.easing.min.js"></script>
 <script src="myjs/preloader.js"></script>
+<script src="bower_components/bootstrap/js/collapse.js"></script>
 
 
 </body>

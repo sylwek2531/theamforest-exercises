@@ -1,6 +1,8 @@
 /*glowne*/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
 }
 
 #container{
@@ -53,8 +55,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     margin-top: 25px;
     font-family: 'Playfair Display', serif;
+
 }
-.menub a {
+.menub li {
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -273,7 +276,8 @@ ul.work li {
 .carousel {
     height: 250px;
     margin-bottom: 60px;
-    width: 1110px;
+
+    /*width: 1110px;*/
 
 
 }
@@ -293,7 +297,7 @@ ul.work li {
     left: 0;
     width: 80px;
     border-radius: 50%;
-    margin-left: 525px;
+    margin-left: 555px;
 }
 /*akt6stop*/
 /*akt7*/
@@ -403,24 +407,41 @@ ul.work li {
     z-index: 10000;
 }
 
-@-webkit-keyframes spinner {
+@-webkit-keyframes fadeIn {
+
     0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+        -webkit-transform: translateX(-250px);
     }
     100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+        -webkit-transform: translateX(0px);
+    } }
+@-moz-keyframes fadeIn { 0% {
+    -webkit-transform: translateX(-250px);
+}
+    100% {
+        -webkit-transform: translateX(0px);
+    } }
+@keyframes fadeIn {
+
+    0% {
+        -webkit-transform: translateX(-250px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
     }
 }
 
-@keyframes spinner {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+.fade-in {
+    transform: translateX(-250px);  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.3s;
+    -moz-animation-duration:0.3s;
+    animation-duration:0.3s;
 }
