@@ -17,3 +17,8 @@ $(function() {
         event.preventDefault();
     });
 });
+$(document).ready(function(){
+    $('.navbar-nav').click(function () {
+        $('.navbar-collapse').attr('aria-expanded', 'false').removeClass('in');
+    });
+});
