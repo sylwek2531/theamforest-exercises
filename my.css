@@ -4,6 +4,71 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 
 }
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display';
+}
+/*new*/
+.header-top-area {
+    background: #2C2C2C;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+
+.logo {
+    padding-top: 28px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+.logo a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 900;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.navbar {
+    margin: 0;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.mainmenu .navbar-nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 30px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 600;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #2C2C2C; !important;
+}
+
+/*new*/
 
 #container{
     margin-top: auto;
@@ -267,7 +332,7 @@ ul.work li {
 /*akt5stop*/
 /*akt6*/
 .akt6{
-    padding: 100px 0;
+    padding: 90px 0;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -275,7 +340,7 @@ ul.work li {
 /* Carousel base class */
 .carousel {
     height: 250px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     /*width: 1110px;*/
 
@@ -289,15 +354,12 @@ ul.work li {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
+    margin-top: 50px;
     height: 250px;
 }
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.carousel-inner > .item > .container > .carousel-caption > img {
     width: 80px;
     border-radius: 50%;
-    margin-left: 555px;
 }
 /*akt6stop*/
 /*akt7*/
